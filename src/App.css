@@ -1,0 +1,15 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s, color 0.3s;
+}
+:root {
+  --bg: #ffffff;
+  --primary: #333333;
+}
+
+[data-theme='dark'] {
+  --bg: #111111;
+  --primary: #ffffff;
+}

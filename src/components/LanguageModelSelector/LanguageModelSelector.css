@@ -1,0 +1,40 @@
+ .selector-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.selector-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.selector-label {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.selector-dropdown {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.selector-dropdown:hover {
+  border-color: var(--primary-color);
+}
+
+.selector-dropdown:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}

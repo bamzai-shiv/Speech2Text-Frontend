@@ -1,0 +1,50 @@
+:root {
+  /* Light theme */
+  --bg-primary: #f5f7fa;
+  --header-bg: #ffffff;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --primary-color: #4a6bff;
+  --primary-hover: #3a5bef;
+  --border-color: #e0e0e0;
+  --upload-bg: #ffffff;
+  --upload-active-bg: #f0f4ff;
+  --input-bg: #ffffff;
+  --card-bg: #ffffff;
+  --button-bg: #f0f0f0;
+  --button-text: #333333;
+  --button-hover: #e0e0e0;
+  --result-bg: #f9f9f9;
+  --error-color: #d32f2f;
+  --error-bg: #fde8e8;
+}
+
+.dark-theme {
+  --bg-primary: #121212;
+  --header-bg: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --primary-color: #5d7eff;
+  --primary-hover: #4d6eef;
+  --border-color: #444444;
+  --upload-bg: #2d2d2d;
+  --upload-active-bg: #3a3a3a;
+  --input-bg: #2d2d2d;
+  --card-bg: #2d2d2d;
+  --button-bg: #3a3a3a;
+  --button-text: #e0e0e0;
+  --button-hover: #4a4a4a;
+  --result-bg: #252525;
+  --error-color: #ff6b6b;
+  --error-bg: #3a2525;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+}

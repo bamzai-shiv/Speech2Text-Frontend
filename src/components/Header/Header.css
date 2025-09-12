@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.theme__icon{
+  margin: 2px;
+}
+
+:root {
+  --bg: #ffffff;
+  --primary: hsl(198, 90%, 55%);
+  --primaryT: hsla(198, 90%, 55%, 0.5);
+  --transDur: 0.3s;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --primary: hsl(48, 90%, 55%);
+  --primaryT: hsla(48, 90%, 55%, 0.5);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  stroke: var(--text-primary);
+}
+
+.dark-mode-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--text-primary); /* ensure this works in light/dark themes */
+  transition: transform 0.2s ease, color 0.3s ease;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.2);
+  color: var(--primary-color); /* you can define this in your variables */
+}
+
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  background-color: var(--button-hover);
+}
